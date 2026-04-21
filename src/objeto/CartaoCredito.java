@@ -13,6 +13,16 @@ public class CartaoCredito {
     private int anoValidade;
     private boolean ativo;
 
+    public CartaoCredito() {}
+
+    public CartaoCredito(String codigo, int cvv, int mesValidade, int anoValidade, boolean ativo) {
+        this.codigo = codigo;
+        this.cvv = cvv;
+        this.mesValidade = mesValidade;
+        this.anoValidade = anoValidade;
+        this.ativo = ativo;
+    }
+
     public void passarMaquininha() {
         System.out.println("Passando cartão na maquininha");
     }
