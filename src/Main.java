@@ -1,7 +1,6 @@
-import objeto.CalculoTaxaCartao;
-import objeto.CartaoCredito;
-import objeto.Mastercard;
-import objeto.Visa;
+import objeto.*;
+
+import java.util.Set;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -22,5 +21,7 @@ public class Main {
         float valorFinal = CalculoTaxaCartao.calcular(valorPedido, visa);
         System.out.println("O valor total do pedido realizando com o cartão Visa é: " + valorFinal);
 
+        ProcessadorCartaoCredito processadorCartaoCredito = new ProcessadorCartaoCredito(Set.of(visa, mastercard));
+        processadorCartaoCredito.processar();
     }
 }
