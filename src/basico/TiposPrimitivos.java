@@ -14,6 +14,12 @@ public class TiposPrimitivos {
     // Para atribuir um valor a uma variavel devemos sempre informar o tipo primeiro, como em C.
     // tipo nome_variavel = valor;
 
+    // idade = 10.0;
+    // letra = 'ER';
+    // salario = 100,50;
+    // imposto = 10,5f;
+    // ativo = null;
+
   }
 
 }
