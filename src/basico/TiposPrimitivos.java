@@ -19,6 +19,8 @@ public class TiposPrimitivos {
     // salario = 100,50;
     // imposto = 10,5f;
     // ativo = null;
+    String nome = "Erick";
+    // nome = 10;
 
   }
 

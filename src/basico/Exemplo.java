@@ -1,5 +1,6 @@
 package basico;
 
+import java.math.BigDecimal;
 import java.util.Scanner;
 
 public class Exemplo {
@@ -57,6 +58,13 @@ public class Exemplo {
         break;
       default:
         System.out.println("Nao consegui identificar");
+    }
+
+    Double preco = 10.5;
+    if (preco > 10) {
+      System.out.println("Maior que 10");
+    } else {
+      System.out.println("Menor que 10");
     }
 
   }
