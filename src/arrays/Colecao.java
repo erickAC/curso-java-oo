@@ -2,6 +2,8 @@ package arrays;
 
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
@@ -46,6 +48,27 @@ public class Colecao {
     namesMap.put("Fernando", 25);
     System.out.println(namesMap);
 
+    // LinkedHashSet - Set que contem ordenacao de items
+    Set<String> namesLinkedSet = new LinkedHashSet<>();
+    namesLinkedSet.add("Erick");
+    namesLinkedSet.add("Erick");
+    namesLinkedSet.add("Maria");
+    namesLinkedSet.add("Fernando");
+    System.out.println(namesLinkedSet);
+
+    // LinkedHashMap - Map que contem ordenacao de items
+    Map<String, Integer> namesLinkedMap = new LinkedHashMap<>();
+    namesLinkedMap.put("Erick", 23);
+    namesLinkedMap.put("Maria", 20);
+    namesLinkedMap.put("Fernando", 23);
+    namesLinkedMap.put("Fernando", 25);
+    System.out.println(namesLinkedMap);
+
+    // Criacao de uma lista personalizada
+    MeuListDeNomes nomes = new MeuListDeNomes();
+    nomes.add("Erick");
+    nomes.buscarNome("Maria").ifPresentOrElse(System.out::println, () -> System.out.println("Não encontrado"));
+    nomes.buscarNome("Erick").ifPresent(System.out::println);
   }
 
 }
