@@ -23,6 +23,31 @@ public class ArrayBasico {
       System.out.println("[" + i + "] = " + value);
     }
 
+    String[] estados = new String[10];
+    float[] x = new float[10];
+    estados[0] = "SP";
+    estados[1] = "RJ";
+    // estados[2] = 10;
+
+    String sp = estados[0];
+    System.out.println("Estado selecionado " + sp);
+    String rj = estados[1];
+    System.out.println("Estado selecionado " + rj);
+    estados[2] = null;
+    System.out.println("Estado selecionado " + estados[2]);
+    System.out.println("Estado selecionado " + estados[11]);
+
+    int i = 0;
+    while(i < estados.length) {
+      if (estados[i] != null) {
+        System.out.println("Estados do brasil " + estados[i]);
+      }
+      i++;
+    }
+
+    // SP - 0
+    // RJ - 1
+
   }
 
 }
